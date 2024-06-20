@@ -101,7 +101,7 @@
 }
 
 #skills {
-  height: 50vh;
+  height: 60vh;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -243,10 +243,12 @@
     width: 100%;
     text-align: center;
     padding: 15px;
+    font-size: 18px;
   }
   #skills {
-    height: auto;
+    height: 60vh;
     padding: 20px;
+    justify-content: center;
   }
   #skills h2 {
     font-size: 32px;

@@ -1,9 +1,9 @@
 // Menu hambúrguer
 document.addEventListener('DOMContentLoaded', function() {
-    const hamburguer = document.querySelector('.hamburger input');
+    const hamburguer = document.querySelector('.menu-hamburguer');
     const menuLista = document.querySelector('.menu-lista');
 
-    hamburguer.addEventListener('change', function() {
+    hamburguer.addEventListener('click', function() {
         menuLista.classList.toggle('active');
     });
 });
