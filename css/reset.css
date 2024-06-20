@@ -1,0 +1,37 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header,main,footer{
+    max-width: 100%;
+}
+
+
+.container-text #typing-container {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container-text #typing-container .tittle,
+.container-text #typing-container .sub-tittle {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid #555555;
+    animation: blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #686868;
+    }
+}
+

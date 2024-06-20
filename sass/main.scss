@@ -1,0 +1,468 @@
+// Cores 
+$blackColor:#1e1e1e;
+$azulColor:#1649ff;
+$brancoColor:#f4f4f4;
+$cinzaColor:#565656;
+// Fonte 'PoPPINS'
+$fontePrincipal:'Poppins',sans-serif;
+
+*{
+    scroll-behavior: smooth;
+}
+
+
+#home{
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $brancoColor;
+}
+
+.container-text{
+    width: 900px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    justify-content: space-around;
+
+    .tittle{
+        font-size: 55px;
+        color: $cinzaColor;
+    }
+
+    h2{
+        font-size: 44px;
+        color: #565656;
+    }
+
+    h3{
+        font-size: 23px;
+    }
+
+    p{
+        font-size: 23px;
+        text-align: center;
+        color: $cinzaColor;
+    }
+
+    .link{
+        height: 54px;
+        width: 54px;
+        justify-content: center;
+        border: none;
+        font-size: 36px;
+        color: $brancoColor;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #1649ff;
+        transition: all 1s ease-in-out;
+        animation: arrow 1s infinite alternate;
+        z-index: 0;
+
+        &:hover{
+            box-shadow: 3px 3px 10px #4870ff6c;
+        }
+    }
+}
+
+@keyframes arrow {
+    from{
+        
+        transform: translateY(40px);
+    }
+    to{
+       
+        transform: translateY(0px);
+    }
+}
+// Sobre section
+#sobre{
+    height: 90vh;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: $brancoColor;
+
+    article{
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 750px;
+
+        h2{
+            font-size: 30px;
+            color: $cinzaColor;
+        }
+
+        .link{
+            border: 1px solid #1649ff;
+            padding: 10px;
+            width: 200px;
+            font-weight: 600;
+            color: $blackColor;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+            
+            &:hover{
+                background-color: $azulColor;
+                color: $brancoColor;
+            }
+        }
+    }
+
+}
+// Fim Sobre Section
+#skills{
+    height: 50vh;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $brancoColor;
+
+    h2{
+        color: $cinzaColor;
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .container-img{
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 90px;
+        width: 70%;
+    }
+}
+// Fim Skills section
+// Projetos section
+#projetos{
+    width: 100%;
+    background-color: $brancoColor;
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    h1{
+        font-size: 40px;
+        color: $cinzaColor;
+        text-align: center;
+    }
+}
+
+.container-projetos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    gap: 50px;
+    padding: 10px;
+
+  
+}
+
+.projeto{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+    .btn-projeto{
+        border: none;
+        background-color: #1649ff;
+        padding: 10px;
+        width: 200px;
+        color: $brancoColor;
+        border-radius: 5px;
+        transition: all 0.2s ease-in-out;
+
+        &:hover{
+            font-weight: 600;
+            transform: scale(1.1);
+            box-shadow: 2px 2px 10px #1e1e1e50;
+        }
+    }
+
+    img{
+        height: auto;
+        width: 500px;
+    }
+
+    .tablet{
+        height: auto;
+        width: 350px;
+    }
+
+    .descricao{
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+       
+        h2{
+            font-size: 30px;
+        }
+
+        p{
+            color: #565656;
+        }
+    }
+}
+// Fim projetos section
+// Formulário de contato
+#form-contato{
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $brancoColor;
+
+    form{
+        height: 500px;
+        width: 100%;
+        max-width: 500px;
+        background-color: $blackColor;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px;
+        border-radius: 10px;
+
+        label{
+            color: $brancoColor;
+            font-size: 18px;
+            font-weight: 600;
+            color: #e0e0e0;
+            padding-left: 10px;
+            border-left: 2px solid #1649ff;
+        }
+
+        input{
+            padding: 5px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+
+        textarea{
+            height: 100px;
+            padding: 8px;
+            border: none;
+            outline: 2px solid #565656;
+            background-color: #121212;
+            border-radius: 10px;
+            color: $brancoColor;
+        }
+
+        div{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        #btn-enviar{
+            width: 100%; 
+            max-width: 300px; 
+            margin: 0 auto;
+            padding: 10px; 
+            font-size: 17px;
+            background-color: $azulColor;
+            color: $brancoColor;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: all 0.3s ease-in-out;
+
+
+            &:hover{
+                transform: translateY(-5px);
+            }
+        }
+    }
+}
+
+
+
+
+
+// Responsivo Dispositios móveis
+@media (max-width: 768px) {
+    #home {
+        padding: 20px;
+
+        .container-text {
+            width: 100%;
+            padding: 10px;
+            gap: 20px;
+
+            .tittle {
+             
+                max-width: 70%;
+                font-size: 10px;
+            }
+
+            h2 {
+                font-size: 92px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .link{
+                height: 44px;
+                width: 44px;
+                justify-content: center;
+                border: none;
+                font-size: 36px;
+                color: $brancoColor;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 50%;
+                background-color: #1649ff;
+                transition: all 1s ease-in-out;
+                animation: arrow 1s infinite alternate;
+            }
+        }
+    }
+
+    #sobre {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+
+        article {
+            width: 100%;
+            height: auto;
+            gap: 20px;
+            padding: 10px;
+
+            h2 {
+                font-size: 24px;
+                text-align: center;
+            }
+
+            .link {
+                width: 100%;
+                text-align: center;
+                padding: 15px;
+            }
+        }
+    }
+
+    #skills {
+        height: auto;
+        padding: 20px;
+
+        h2 {
+            font-size: 32px;
+        }
+
+        .container-img {
+            margin-top: 3rem;
+            gap: 40px;
+            width: 90%;
+        }
+    }
+    // Projetos
+    #projetos{
+        height: 110vh;
+    }
+    .projeto {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 20px; 
+
+        img, .tablet {
+            width: 90%;
+        }
+
+        .descricao {
+            align-items: center;
+            width: 90%; 
+            h2 {
+                font-size: 24px; 
+            }
+        }
+    }
+    // Formulário de contato
+    #form-contato {
+        height: 200vh; 
+        padding: 10px;
+        padding-top: 10rem;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+        gap: 40px;
+
+        h1{
+            text-align: center;
+        }
+    }
+
+    form {
+        height: 900px;
+        width: 90%; // Ajustado para 90% de largura em dispositivos móveis
+        gap: 30px;
+    }
+
+    label {
+        font-size: 16px; // Ajustado tamanho da fonte
+    }
+
+    input, textarea {
+        width: 100%; // Ajustado para 100% de largura
+    }
+
+    #btn-enviar {
+        width: 90%; // Ajustado para 90% de largura
+        max-width: none; // Remove o limite máximo
+    }
+}
+
+@media (max-width: 480px) {
+    // Home section
+    #home {
+        padding: 15px;
+
+        .container-text {
+            gap:25px;
+
+            .tittle {
+                font-size: 40px;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 22px;
+            }
+
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+    // Fim home section
+    // Sobre section
+}
