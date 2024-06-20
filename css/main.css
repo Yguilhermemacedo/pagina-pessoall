@@ -190,70 +190,6 @@
   color: #565656;
 }
 
-#form-contato {
-  height: 100vh;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #f4f4f4;
-}
-#form-contato form {
-  height: 500px;
-  width: 100%;
-  max-width: 500px;
-  background-color: #1e1e1e;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 20px;
-  border-radius: 10px;
-}
-#form-contato form label {
-  color: #f4f4f4;
-  font-size: 18px;
-  font-weight: 600;
-  color: #e0e0e0;
-  padding-left: 10px;
-  border-left: 2px solid #1649ff;
-}
-#form-contato form input {
-  padding: 5px;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-}
-#form-contato form textarea {
-  height: 100px;
-  padding: 8px;
-  border: none;
-  outline: 2px solid #565656;
-  background-color: #121212;
-  border-radius: 10px;
-  color: #f4f4f4;
-}
-#form-contato form div {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-#form-contato form #btn-enviar {
-  width: 100%;
-  max-width: 300px;
-  margin: 0 auto;
-  padding: 10px;
-  font-size: 17px;
-  background-color: #1649ff;
-  color: #f4f4f4;
-  border: none;
-  border-radius: 5px;
-  font-weight: 600;
-  transition: all 0.3s ease-in-out;
-}
-#form-contato form #btn-enviar:hover {
-  transform: translateY(-5px);
-}
-
 @media (max-width: 768px) {
   #home {
     padding: 20px;
@@ -263,9 +199,8 @@
     padding: 10px;
     gap: 20px;
   }
-  #home .container-text .tittle {
-    max-width: 70%;
-    font-size: 10px;
+  #home .container-text .tittle, #home .container-text .sub-tittle {
+    font-size: 20px;
   }
   #home .container-text h2 {
     font-size: 92px;
@@ -322,15 +257,18 @@
     width: 90%;
   }
   #projetos {
-    height: 110vh;
+    height: 240vh;
   }
   .projeto {
     flex-direction: column;
     align-items: center;
     gap: 20px;
   }
-  .projeto img, .projeto .tablet {
+  .projeto img {
     width: 90%;
+  }
+  .projeto .tablet {
+    width: 60%;
   }
   .projeto .descricao {
     align-items: center;
@@ -338,34 +276,6 @@
   }
   .projeto .descricao h2 {
     font-size: 24px;
-  }
-  #form-contato {
-    height: 200vh;
-    padding: 10px;
-    padding-top: 10rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-  }
-  #form-contato h1 {
-    text-align: center;
-  }
-  form {
-    height: 900px;
-    width: 90%;
-    gap: 30px;
-  }
-  label {
-    font-size: 16px;
-  }
-  input, textarea {
-    width: 100%;
-  }
-  #btn-enviar {
-    width: 90%;
-    max-width: none;
   }
 }
 @media (max-width: 480px) {

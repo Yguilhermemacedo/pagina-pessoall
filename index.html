@@ -28,9 +28,16 @@
 
         <nav id="menu">
 
-            <div class="menu-hamburguer">
+            <!-- <div class="menu-hamburguer">
                 <span></span><span></span><span></span>
-            </div>
+            </div> -->
+            <label class="hamburger">
+                <input type="checkbox">
+                <svg viewBox="0 0 32 32">
+                  <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                  <path class="line" d="M7 16 27 16"></path>
+                </svg>
+              </label>
 
             <ul class="menu-lista">
                 <li class="menu-item"><a href="#home">Home</a></li>
@@ -41,7 +48,7 @@
         </nav>
     </header>
     <main>
-        <section id="home" class="show-animate">
+        <section id="home">
            
             <article class="container-text">
                 <div id="typing-container">
@@ -53,7 +60,7 @@
                 <a href="#sobre"><button class="link"><i class='bx bx-chevron-down'></i></button></a>
             </article>
         </section>
-        <section  class="show-animate" id="sobre">
+        <section  id="sobre">
             <img src="assets/img/Guilherme.png" alt="Imagem">
             <article>
                 <h2>Conheça um pouco <strong style="color: black;">sobre mim</strong> <span style=" color: #1649ff;">.</span></h2>
@@ -109,28 +116,21 @@
                     </div>
                 </div>
             </section>
-            <sectoin id="form-contato">
-                <h1><span style="color: #1649ff;">Conecte-se</span> comigo e dê vida aos seus <span style="color: #1649ff;">projetos</span>!</h1>
-                <!-- Formulário de contato -->
-                 <form action="#" method="get">
-                    <div>
-                        <label for="nome">Nome</label>
-                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" maxlength="16" required>
-                    </div>
-                    <div>
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Digite seu email" required>
-                    </div>
-                    <div>
-                        <label for="descricao">Descrição</label>
-                        <textarea name="textarea" id="campo-texto" placeholder="Descreva a idéia de seu projeto..."></textarea>
-                    </div>
-                    <button type="submit" id="btn-enviar">Enviar</button>
-                 </form>
-            </sectoin>
     </main>
-    <footer>
+    <footer id="contato">
+        <div class="social-media">
+            <span class="tittle-footer"><img src="assets/img/iconee.png" alt="ícone de Guiherme"> <p>Acompanhe minhas redes sociais</p></span>
 
+            <div class="container-buttons">
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
+                <a href="https://wa.me/5511989478086?text=Ola%2C%20Guilherme%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20servi%C3%A7o%20de%20desenvolvimento%20de%20site%20"><i class='bx bxl-whatsapp' ></i></a>
+            </div>
+
+        </div>
+        <div class="creditos">
+            <p>Design e site criado por <span style="font-weight: bold; color: #ebebeb;">Guilherme Macedo</span></p>
+        </div>
     </footer>
     <script src="js/scripts.js"></script>
 </body>
