@@ -19,6 +19,7 @@
        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
 <body>
     <header>
@@ -46,7 +47,7 @@
     <main>
         <section id="home">
            
-            <article class="container-text">
+            <article class="container-text"  data-aos="fade-right">
                 <div id="typing-container">
                     <h1 class="tittle"></h1>
                    
@@ -56,7 +57,7 @@
                 <a href="#sobre"><button class="link"><i class='bx bx-chevron-down'></i></button></a>
             </article>
         </section>
-        <section  id="sobre">
+        <section  id="sobre"  data-aos="fade-up">
             <img src="assets/img/Guilherme.png" alt="Imagem">
             <article>
                 <h2>Conheça um pouco <strong style="color: black;">sobre mim</strong> <span style=" color: #1649ff;">.</span></h2>
@@ -67,7 +68,7 @@
         </section>
         <!-- Fim section sobre -->
          <!-- Sklills section -->
-          <section id="skills">
+          <section id="skills"  data-aos="fade-up">
             <h2>Minhas <strong style="color: black;">Habilidades</strong><span style="color: #1649ff;">.</span></h2>
             <div class="container-img">
                 <div class="skill" style="border-bottom: 2px solid #FC490B; padding-bottom: 10px;"><img src="assets/img/html-5.png" alt="ícone html"></div>
@@ -82,7 +83,7 @@
             <section id="projetos">
                 <h1>Projetos</h1>
                 <div class="container-projetos">
-                    <div class="projeto">
+                    <div class="projeto"  data-aos="fade-up">
                         <img src="assets/img/pcr-page.png" alt="Página PCR Marcas & Patentes">
                         <div class="descricao">
                             <h2>PCR <span style="color: #000;">Marcas</span> & <span style="color:#c51a3c;">Patentes</span></h2>
@@ -92,23 +93,13 @@
                             <a href="https://pcrmarcasepatentes.com.br/" target="_blank"><button class="btn-projeto">Ver projeto</button></a>
                         </div>                   
                     </div>
-                <div class="projeto">
-                    <img src="assets/img/yupi-page.png" alt="Página Yupi Commerce">
+                <div class="projeto"  data-aos="fade-up">
+                    <img src="assets/img/escola-phone.png" alt="Aplicação de para escola" style="height: auto; width: 300px;">
                     <div class="descricao">
-                        <h2 style="color: #000;"><span style="color: #451e82;">Yupi</span> Commerce</h2>
-                        <p>Esta landing page feita para a Yupi Commerce, com foco  em um plano de consultoria para marketplace. Projeto esta responsivo com um design agradável, intergrado API Rest.</p>
+                        <h2>High Scholl</h2>
+                        <p>Com foco em aprimorar conhecimento em manipulação de DOM com Javascript, projeto funcional e responsivo com uma interface interativa.</p>
 
-                        <a href="#"><button class="btn-projeto">Ver projeto</button></a>
-                    </div>
-                </div>
-                <!-- Projetos -->
-                <div class="projeto">
-                    <img src="assets/img/tablet.png" alt="Tablet com demonstração de dev barbershop" class="tablet">
-                    <div class="descricao">
-                        <h2 style="color: #000;"><span style="color: #c51a3c;">Dev</span> Barber <span style="color: #2196F3;">Shop</span></h2>
-                        <p>A Dev Barber Shop é uma barbearia que busca a facilidade de atendimento e automatizar o agendamento de atendimento aos clientes.</p>
-
-                        <a href="#"><button class="btn-projeto" onclick="aviso()">Em desenvolvimento</button></a>
+                        <a href="https://yguilhermemacedo.github.io/aplicar-nota-escolar/" target="_blank"><button class="btn-projeto">Ver projeto</button></a>
                     </div>
                 </div>
             </section>
@@ -129,5 +120,9 @@
         </div>
     </footer>
     <script src="js/scripts.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
 </body>
 </html>
